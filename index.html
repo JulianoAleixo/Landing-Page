@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/script.js"></script>
+
+</head>
+
+<body>
+    <input type="checkbox" role="button" aria-pressed="true" name="close-menu" id="close-menu" class="close-menu">
+    <label for="close-menu" title="close menu" class="close-menu-label"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#home">home</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">Sobre</a></li>
+                    <li><a href="#top3">Top 3</a></li>
+                    <li><a href="#gallery">Social</a></li>
+                    <li><a href="#work">Profissional</a></li>
+                    <li><a href="#pricing">Preços</a></li>
+                    <li><a href="#contact">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Bem vindo ao meu portifólio</h2>
+                <p>Bom, esse site foi feito para treinar meus conhecimentos de front-end. Ainda possui algumas coisas a
+                    serem mudadas
+                    no futuro, principalmente relacionadas ao back-end. Realmente espero que gostem.
+                </p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/intro-img.svg"
+                    alt="Desenho de um homem sentado de frente para seu computador codando.">
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Sobre mim</h2>
+            <p>Sou estudante do ensino técnico em telecomunicações na Escola Técnica Francisco Moreira da Costa.
+                Possuo grande interesse pela tecnologia, principalmente no ramo da computação e cibernética.</p>
+            <p>Como estudante já atuei em trabalhos em áreas de entretenimento, tecnologia assitiva e IoT e
+                possuo entusiasmo pelas áreas de programação e desenvolvimento. Possuo grande facilidade de
+                programar linguagens orientada a objetos, microcontroladores e linguagens front-end.</p>
+            <p>Durante o curso, fui monitor de estudos para minha classe. Além disso, tenho facilidade
+                em aprender coisas novas, tenho muita criatividade para resolver problemas e consigo
+                trabalhar muito bem em grupo. Com relação a idiomas, tenho o português como nativo, nível avançado
+                de inglês e inglês técnico. </p>
+            <p>Minhas principais conquistas foram durante a feira de projetos eletrônicos acadêmicos da ETE,
+                a qual meu projeto foi premiado durante todos os anos em que participei. Vale ressaltar os
+                prêmios de projeto empreendedor indicado pela FAI, no ano de 2021 e o prêmio de melhor projeto
+                de IoT indicado pelo Inatel, em 2022.</p>
+        </div>
+    </section>
+
+    <section id="top3" class="main-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">Meus melhores projetos</h2>
+            <p class="grid-description">Aqui irei falar dos projetos apresentados na feira de tecnologia ProjETE
+                promovida pela ETE FMC
+            </p>
+            <div class="grid">
+                <article>
+                    <h3>Sun Mind - 2022</h3>
+                    <p>Um dispositivo responsável pelo processo automático de termografia de usinas fotovoltaicas.
+                        Consiste em um carrinho de controle remoto controlado por Bluetooth a partir de uma Raspberry Pi
+                        3 B+, um ESP8266 para o acionamento
+                        do motor, uma webcam simulando uma camera térmica e uma rede neural para que possa ser analisada
+                        as fotos posteriormente.
+                        Foram utilizadas bibliotecas do Python para se comunicar com o celular pelo Bluetooth (Bluez),
+                        para tirar as fotos (OpenCV) e para a rede neural
+                        (TensorFlow e Keras).
+                    </p>
+                </article>
+                <article>
+                    <h3>Remember - 2021</h3>
+                    <p>Um dispositivo voltado para o uso de pessoas com o estágio inicial de Alzheimer ou para pessoas
+                        que consumam muita medicação.
+                        É um disco que serve o remédio correto na hora correta e informa ao dono caso o remédio tenha
+                        sido tirado do dispenser.
+                        O disco foi moldado e impresso em 3d. Foram usados um sensor foto-voltáico para analizar se o
+                        remédio foi retirado ou não.
+                        A comunicação do dispositivo acontece por Wi-Fi pelo ESP8266 e os dados são trocados entre o
+                        aplicativo, que possui um banco de dados.
+                    </p>
+                </article>
+                <article>
+                    <h3>Sk8 Vibration - 2020</h3>
+                    <p>Uma simulação de um skate eletrônico. A simulação foi feita utilizando a plataforma Tinkercad.
+                        Foi utilizado um sensor LDR para
+                        identificar se havia alguem sobre o skate, para que assim possa ser acionado o motor. Além
+                        disso, o skate possui 2 modos de uso,
+                        iniciante e experiente e 2 informações a serem mostradas no display LCD, velocidade e tempo de
+                        uso.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="white-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="gallery-main-heading">Redes Sociais e Mídias</h2>
+            <p class="gallery-description">Não possuo muitas redes socias. Aqui temos as que eu uso e também onde eu
+                mais amo ficar, jogando.</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <a href="https://www.linkedin.com/in/juliano-aleixo-090111257/" rel="nofolow" target="_blank">
+                        <img src="assets/img/LinkedIn.jpg" alt="Logo do LinkedIn">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                    <a href="https://instagram.com/julianuh.aleixo?utm_medium=copy_link" rel="nofolow" target="_blank">
+                        <img src="assets/img/Instagram.png" alt="Logo do Instagram">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                    <a href="https://github.com/JulianoAleixo" rel="nofolow" target="_blank">
+                        <img src="assets/img/GitHub.png" alt="Logo do GitHub">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/lol-removebg-preview_resized.png" alt="Logo do League Of Legends">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/Epic-removebg-preview.png" alt="Logo da Epic Games">
+                </div>
+                <div class="gallery-img">
+                    <a href="https://steamcommunity.com/profiles/76561198424709477/">
+                        <img src="assets/img/Steam.png" alt="Logo da Steam">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="main-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">Profissional</h2>
+            <p class="grid-description"> Tenho muito interesse em programação. Aqui estão 3 áreas que gosto de aprender.
+            </p>
+            <div class="grid">
+                <article>
+                    <h3>Front-End</h3>
+                    <p>Não preciso nem comentar muito sobre esse tópico, esse site por completo foi feito utilizando
+                        HTML5 e CSS3 puro.
+                        Codar sites exige muita criatividade e me sinto um verdadeiro artista quando preciso transformar
+                        um HTML branco e sem vida em algo
+                        bonito e agradável.
+                    </p>
+                </article>
+                <article>
+                    <h3>Orientadas a Objetos</h3>
+                    <p>Atualmente estou fazendo um curso de JavaScript e TypeScript, mas ja tenho certa noção com esse
+                        tipo de programação. Outra linguagem
+                        orientada a objetos que ja pude trabalhar é o Python.
+                    </p>
+                </article>
+                <article>
+                    <h3>Microcontroladores</h3>
+                    <p>Desde novo já brincava com projetos simples no Arduino. Durante o curso técnico eu tive uma
+                        facilidade enorme em trabalhar com esse
+                        tipo de tecnologia e dispertei muito interesse em outros microcontroladores para sistemas
+                        embarcados, que podem entrar nas áreas de automação
+                        residencial e Internet das Coisas.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Preços</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti explicabo doloremque
+                fuga molestias debitis laboriosam architecto? In enim facilis soluta tempora minima hic!
+                Alias corporis eum labore dolore consectetur commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio mollitia repellendus
+                cupiditate voluptatum doloremque, quam hic est perspiciatis voluptas fugiat quis alias
+                omnis vel sequi reprehenderit excepturi molestiae unde?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, unde deleniti dolorem fugit
+                commodi expedita rerum ducimus debitis ipsam architecto non soluta, consectetur tenetur
+                voluptatem nihil! Ut doloribus odit illum?</p>
+
+            <div class="responsive-table">
+                <table>
+                    <caption>Tabela</caption>
+                    <thead>
+                        <tr>
+                            <th>Título 1</th>
+                            <th>Título 2</th>
+                            <th>Título 3</th>
+                            <th>Título 4</th>
+                            <th>Título 5</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Envie um Feedback</h2>
+                <p>Este campo é totalmente reservado para críticas construtivas e observações. Sinta-se a vontade para
+                    escrever
+                    o que quiser.
+                </p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/contact-img.svg" alt="Desenho de duas pessoas trocando suas redes sociais.">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contato</legend>
+                    <div class="form-group">
+                        <label for="first-name">Primeiro Nome</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Último Nome</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Menssagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                    </div>
+                    <div class="form-group full-width button">
+                        <button type="submit" onclick="sendForm()">Enviar</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="white-bg footer">
+        <p>Feito com muito carinho por Juliano Aleixo</p>
+    </footer>
+
+    <a href="#home" class="back-to-top">➤</a>
+</body>
+
+</html>
